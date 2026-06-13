@@ -1,0 +1,45 @@
+{
+  "name": "goodness-high-school-sms",
+  "version": "1.0.0",
+  "description": "Comprehensive Nigerian School Management System with Super Admin",
+  "main": "backend/src/app.js",
+  "scripts": {
+    "dev": "docker-compose up -d",
+    "down": "docker-compose down",
+    "logs": "docker-compose logs -f",
+    "build": "docker-compose build",
+    "rebuild": "docker-compose down && docker-compose up -d --build",
+    "backend:install": "cd backend && npm install",
+    "frontend:install": "cd frontend && npm install",
+    "install:all": "npm install && npm run backend:install && npm run frontend:install",
+    "migrate": "docker-compose exec backend npm run migrate",
+    "seed": "docker-compose exec backend npm run seed",
+    "test": "docker-compose exec backend npm test",
+    "lint": "docker-compose exec backend npm run lint",
+    "format": "docker-compose exec backend npm run format"
+  },
+  "keywords": [
+    "school",
+    "management",
+    "system",
+    "nigerian",
+    "sms",
+    "education",
+    "student",
+    "examination",
+    "result",
+    "super-admin",
+    "multi-school",
+    "franchise"
+  ],
+  "author": "DARKBYTE1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DARKBYTE1/GOODNESS-HIGH-SCHOOL.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DARKBYTE1/GOODNESS-HIGH-SCHOOL/issues"
+  },
+  "homepage": "https://github.com/DARKBYTE1/GOODNESS-HIGH-SCHOOL#readme"
+}
